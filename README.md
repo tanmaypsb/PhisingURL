@@ -1,6 +1,6 @@
 # Phishing Website Detection Using Machine Learning
 
-Reproducible FDS Assignment 3 pipeline using the **Phishing Websites** dataset
+Reproducible pipeline using the **Phishing Websites** dataset
 from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/327/phishing+websites)
 (dataset 327; [direct archive](https://archive.ics.uci.edu/static/public/327/phishing+websites)).
 The source's `Result` values are `-1` for phishing and `1` for legitimate. The
