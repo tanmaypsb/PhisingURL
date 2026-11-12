@@ -1,0 +1,39 @@
+{
+  "model_file": "url_only_random_forest.pkl",
+  "target": "is_phishing",
+  "class_labels": {
+    "0": "Legitimate",
+    "1": "Phishing"
+  },
+  "feature_order": [
+    "having_IP_Address",
+    "URL_Length",
+    "Shortining_Service",
+    "having_At_Symbol",
+    "double_slash_redirecting",
+    "Prefix_Suffix",
+    "port",
+    "HTTPS_token"
+  ],
+  "feature_definitions_and_encodings": {
+    "having_IP_Address": "-1 if hostname is an IPv4/IPv6 literal; otherwise 1",
+    "URL_Length": "1 if URL length <54; 0 if 54<=length<=75; -1 if length >75",
+    "Shortining_Service": "-1 if hostname is a known shortening service; otherwise 1",
+    "having_At_Symbol": "-1 if @ occurs in the URL; otherwise 1",
+    "double_slash_redirecting": "-1 if URL path contains //; otherwise 1",
+    "Prefix_Suffix": "-1 if hostname contains a hyphen; otherwise 1",
+    "port": "-1 if explicit port differs from HTTP/HTTPS default; otherwise 1",
+    "HTTPS_token": "-1 if hostname contains the token 'https'; otherwise 1"
+  },
+  "training_source": "Existing cleaned UCI Phishing Websites dataset (dataset 327)",
+  "split": {
+    "test_size": 0.2,
+    "stratified": true,
+    "random_state": 42
+  },
+  "limitations": [
+    "The UCI table contains pre-extracted feature values but no original URL strings.",
+    "The shortened-URL feature uses an explicit offline provider list.",
+    "No DNS, WHOIS, TLS certificate, HTTP, webpage, or reputation features are used."
+  ]
+}
