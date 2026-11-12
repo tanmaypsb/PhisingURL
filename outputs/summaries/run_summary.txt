@@ -1,0 +1,18 @@
+Dataset: UCI Phishing Websites (327)
+Raw rows/columns: 11055/31
+Clean rows/features: 5849/30
+Best by phishing F1, then recall and ROC-AUC: Random Forest
+Accuracy=0.9393; precision_phishing=0.9603; recall_phishing=0.9205; F1_phishing=0.9400; ROC-AUC=0.9892
+Top 10 Random Forest impurity importances:
+SSLfinal_State                 0.342719
+URL_of_Anchor                  0.260477
+having_Sub_Domain              0.059151
+Prefix_Suffix                  0.058450
+web_traffic                    0.053963
+Links_in_tags                  0.040760
+SFH                            0.032050
+Request_URL                    0.016887
+Domain_registeration_length    0.014960
+Links_pointing_to_page         0.014035
+
+Importance describes predictive splits, not causal effects.

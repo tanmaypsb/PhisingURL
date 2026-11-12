@@ -1,0 +1,13 @@
+model,actual_class,predicted_class,count
+Dummy baseline,0,0,0
+Dummy baseline,0,1,566
+Dummy baseline,1,0,0
+Dummy baseline,1,1,604
+URL-only Random Forest,0,0,239
+URL-only Random Forest,0,1,327
+URL-only Random Forest,1,0,72
+URL-only Random Forest,1,1,532
+Existing full-feature Random Forest,0,0,543
+Existing full-feature Random Forest,0,1,23
+Existing full-feature Random Forest,1,0,48
+Existing full-feature Random Forest,1,1,556

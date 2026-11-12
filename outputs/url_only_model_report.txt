@@ -1,0 +1,11 @@
+URL-only vs full-feature model evaluation
+Same stratified 80:20 split, random_state=42; phishing is the positive class.
+The full-feature model is the existing saved Random Forest evaluated on this held-out split.
+The UCI table has no raw URL strings, so it cannot provide URL-level held-out validation.
+
+                              model  accuracy  precision_phishing  recall_phishing  f1_phishing  roc_auc  test_rows
+                     Dummy baseline  0.516239            0.516239         1.000000     0.680947 0.500000       1170
+             URL-only Random Forest  0.658974            0.619325         0.880795     0.727273 0.727174       1170
+Existing full-feature Random Forest  0.939316            0.960276         0.920530     0.939983 0.989206       1170
+
+Interpretation: URL-only performance uses only eight URL-string features; the full model also uses webpage, certificate, domain, DNS, and reputation indicators. These scores describe the UCI engineered-feature benchmark, not deployment performance on newly collected URLs.

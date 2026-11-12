@@ -1,0 +1,42 @@
+DummyClassifier
+              precision    recall  f1-score   support
+
+  Legitimate       0.00      0.00      0.00       566
+    Phishing       0.52      1.00      0.68       604
+
+    accuracy                           0.52      1170
+   macro avg       0.26      0.50      0.34      1170
+weighted avg       0.27      0.52      0.35      1170
+
+
+Logistic Regression
+              precision    recall  f1-score   support
+
+  Legitimate       0.91      0.92      0.91       566
+    Phishing       0.92      0.91      0.92       604
+
+    accuracy                           0.92      1170
+   macro avg       0.92      0.92      0.92      1170
+weighted avg       0.92      0.92      0.92      1170
+
+
+Decision Tree
+              precision    recall  f1-score   support
+
+  Legitimate       0.91      0.92      0.92       566
+    Phishing       0.93      0.92      0.92       604
+
+    accuracy                           0.92      1170
+   macro avg       0.92      0.92      0.92      1170
+weighted avg       0.92      0.92      0.92      1170
+
+
+Random Forest
+              precision    recall  f1-score   support
+
+  Legitimate       0.92      0.96      0.94       566
+    Phishing       0.96      0.92      0.94       604
+
+    accuracy                           0.94      1170
+   macro avg       0.94      0.94      0.94      1170
+weighted avg       0.94      0.94      0.94      1170

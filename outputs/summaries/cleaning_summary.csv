@@ -1,0 +1,12 @@
+item,value
+rows_before,11055
+columns_before,31
+duplicate_rows_removed,5206
+invalid_or_missing_rows_removed,0
+rows_after,5849
+columns_after_including_target,31
+missing_cells_before,0
+outlier_policy,IQR flags reported; no discrete feature rows removed
+target_mapping,Result=-1 phishing => is_phishing=1; Result=1 legitimate => 0
+class_counts,"{0: 2830, 1: 3019}"
+source,UCI Phishing Websites dataset 327

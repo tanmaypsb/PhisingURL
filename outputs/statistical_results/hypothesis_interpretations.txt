@@ -1,0 +1,9 @@
+Statistical inference (family-wise alpha = 0.05; Bonferroni correction for 2 tests)
+
+Welch t-test compares mean encoded URL_Length values without assuming equal variances; reported 95% CI is for phishing minus legitimate mean.
+Chi-square tests independence between the categorical Prefix_Suffix feature and target; Cramer's V measures association.
+
+Welch independent samples t-test — URL_Length: statistic=-4.446, p=8.916e-06, Bonferroni p=1.783e-05, effect=Cohen's d -0.1167. Evidence of a class difference in encoded URL_Length; association does not imply causation.
+
+Pearson chi-square test of independence — Prefix_Suffix: statistic=849.6, p=8.682e-187, Bonferroni p=1.736e-186, effect=Cramer's V 0.3811. Evidence of association between Prefix_Suffix and phishing class; association does not imply causation.
+These tests are descriptive inferential analyses of the available benchmark sample; avoid causal claims.
